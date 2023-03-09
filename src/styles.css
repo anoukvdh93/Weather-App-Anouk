@@ -1,0 +1,83 @@
+.today-temperature {
+  display: flex;
+  padding-right: 35%;
+}
+.dataToday {
+  display: flex;
+  justify-content: center;
+}
+.units {
+  display: flex;
+  align-items: center;
+}
+.dataNow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bigtemp {
+  font-size: 28px;
+}
+.days {
+  text-align: center;
+}
+.row {
+  padding-top: 40px;
+}
+.today {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.symbol {
+  margin-top: 10px;
+}
+.temperature {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.temperature-low {
+  background-color: #e7e7e7;
+  margin-left: 5px;
+}
+#search-button {
+  background-color: #42a5f5;
+  color: #fff;
+}
+#search-button:hover {
+  cursor: pointer;
+  background-color: #166ab0;
+}
+#current-button {
+  background-color: #08902a;
+  color: #fff;
+}
+#current-button:hover {
+  cursor: pointer;
+  background-color: #0c5c48;
+}
+ul {
+  list-style-type: none;
+}
+p {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+body {
+  margin: 80px;
+}
+section {
+  background-color: #b7e4f0;
+  padding: 30px;
+  border-radius: 20px;
+  margin: auto;
+}
+button {
+  font-size: 18px;
+  margin: 20px;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 70px;
+  transition: 200ms all ease-in-out;
+}
