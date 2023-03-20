@@ -2,6 +2,13 @@
   display: flex;
   padding-right: 35%;
 }
+.today-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.today-temperature .active {
+  text-decoration: none;
+}
 .dataToday {
   display: flex;
   justify-content: center;
@@ -41,6 +48,7 @@
   background-color: #e7e7e7;
   margin-left: 5px;
 }
+
 #search-button {
   background-color: #42a5f5;
   color: #fff;
