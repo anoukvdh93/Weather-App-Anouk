@@ -29,26 +29,27 @@
 .days {
   text-align: center;
 }
-.row {
-  padding-top: 40px;
-}
+
 .today {
   padding-top: 30px;
   display: flex;
   flex-direction: row;
 }
-.symbol {
-  margin-top: 10px;
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
 }
-.temperature {
-  margin-top: 10px;
-  margin-left: 5px;
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
 }
-.temperature-low {
-  background-color: #e7e7e7;
-  margin-left: 5px;
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
-
+.weather.forecast-temperatures {
+  font-size: 13px;
+}
 #search-button {
   background-color: #42a5f5;
   color: #fff;
