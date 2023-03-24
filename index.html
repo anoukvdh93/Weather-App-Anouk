@@ -18,63 +18,49 @@
   <body>
     <section>
       <div class="container">
-        <form id="enter-city">
-          <input
-            type="text"
-            id="city-input"
-            name="city"
-            placeholder="Enter city"
-          />
-          <button type="submit" id="search-button">Search</button>
-          <button type="submit" id="current-button">Current</button>
-        </form>
-        <h1 id="city">Barcelona</h1>
-        <div id="current-date">Monday 18:01</div>
-        <div class="today">
-          <div class="today-temperature">
-            <div><img src="" alt="" id="icon" /></div>
-            <div class="dataNow">
-              <div class="dataToday">
-                <p class="bigtemp" id="bigtemp">11</p>
-                <span class="units"
-                  ><a id="celsius-link" class="active" href="#">°C</a>|
-                  <a id="fahrenheit-link" href="#">°F</a>
-                </span>
+        <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="enter-city">
+            <input
+              type="text"
+              id="city-input"
+              name="city"
+              placeholder="Enter city"
+            />
+            <button type="submit" id="search-button">Search</button>
+            <button type="submit" id="current-button">Current</button>
+          </form>
+          <h1 id="city">Barcelona</h1>
+          <div id="current-date">Monday 18:01</div>
+          <div class="today">
+            <div class="today-temperature">
+              <div><img src="" alt="" id="icon" /></div>
+              <div class="dataNow">
+                <div class="dataToday">
+                  <p class="bigtemp" id="bigtemp">11</p>
+                  <span class="units"
+                    ><a id="celsius-link" class="active" href="#">°C</a>|
+                    <a id="fahrenheit-link" href="#">°F</a>
+                  </span>
+                </div>
+                <p id="weather-description">Sunny</p>
               </div>
-              <p id="weather-description">Sunny</p>
             </div>
-          </div>
-          <div class="today-details">
-            <ul>
-              <li>Humidity: <span id="humidity">42</span>%</li>
-              <li>Wind: <span id="wind">16</span>km/h</li>
-            </ul>
+            <div class="today-details">
+              <ul>
+                <li>Humidity: <span id="humidity">42</span>%</li>
+                <li>Wind: <span id="wind">16</span>km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="weather-forecast" id="forecast">
-        <div class="row">
-          <div class="col-2 days">
-            <div class="date">Tue</div>            
-            <div class="symbol">
-              <img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
-                alt=""
-                width="42"
-              />
-            </div>
-            <div class="weather-forecast-temperature">
-             <span class="weather-forecast-temperature-max">12°C</span>
-             <span class="weather-forecast-temperature-min">2°C</span>
-            </div>
-          </div>          
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </div>
     </section>
     <a href="https://github.com/anoukvdh93/Weather-App-Anouk" target="_blank"
       >Open-source code</a
     >, by Anouk van der Heijden
+    </div>
     <script src="script/script.js"></script>
   </body>
 </html>

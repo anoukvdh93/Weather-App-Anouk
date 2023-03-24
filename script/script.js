@@ -24,6 +24,36 @@ function formatDate(date) {
   return `${day}, ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2 days">
+            <div class="date">Tue</div>            
+            <div class="symbol">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+                alt=""
+                width="42"
+              />
+            </div>
+            <div class="weather-forecast-temperature">
+             <span class="weather-forecast-temperature-max">12°C</span>
+             <span class="weather-forecast-temperature-min">2°C</span>
+            </div>
+          </div>          
+          </div>
+        </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let dateElement = document.querySelector("#current-date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
@@ -108,3 +138,4 @@ let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", getCurrentLocation);
 
 search("New York");
+displayForecast();

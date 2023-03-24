@@ -35,6 +35,11 @@
   display: flex;
   flex-direction: row;
 }
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
