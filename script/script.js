@@ -24,11 +24,13 @@ function formatDate(date) {
   return `${day}, ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  
+  
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue" ];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
@@ -45,8 +47,6 @@ function displayForecast() {
              <span class="weather-forecast-temperature-max">12°C</span>
              <span class="weather-forecast-temperature-min">2°C</span>
             </div>
-          </div>          
-          </div>
         </div>`;
   });
 
@@ -59,6 +59,9 @@ let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 function displayWeather(response) {
+  celsiusTemperature = Math.round(
+    response.data.temperature.current
+  );
   document.querySelector("#city").innerHTML = response.data.city;
   document.querySelector("#bigtemp").innerHTML = Math.round(
     response.data.temperature.current
