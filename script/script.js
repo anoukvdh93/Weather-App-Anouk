@@ -25,7 +25,6 @@ function formatDate(date) {
 }
 
 function displayForecast(response) {
-console.log(response.data.daily);
 
   let forecastElement = document.querySelector("#forecast");
 
